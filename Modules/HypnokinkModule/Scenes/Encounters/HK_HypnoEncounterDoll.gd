@@ -292,7 +292,7 @@ func _run():
 			
 		# (subby version)
 		if(npcVariation == "subby"):
-			saynn("{npc.He} wraps {npc.his} arms around you" + (" and {npc.verb('nuzzle')} your chest}." if GM.pc.hasBoundArms() else ". As {npc.he} {npc.verb('nuzzle')} your chest, you return the hug."))
+			saynn("{npc.He} wraps {npc.his} arms around you" + (" and {npc.verb('nuzzle')} your chest." if GM.pc.hasBoundArms() else ". As {npc.he} {npc.verb('nuzzle')} your chest, you return the hug."))
 			
 			saynn("[say=npc]"+RNG.pick([
 				"Mmm~",
